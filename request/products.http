@@ -1,0 +1,33 @@
+@api = http://localhost:3000/products
+
+GET {{api}}
+
+
+### CREAR UN NUEVO PRODUCTO
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Diademas123",
+    "description": "VSG",
+    "quantity": "50"
+}
+
+### CONTADOR DE PRODUCTOS
+GET {{api}}/count
+
+### OBTENER ELEMENTO POR ID
+GET {{api}}/1
+
+### ELIMINAR ELEMENTO POR ID
+DELETE {{api}}/10
+
+### ACTUALIZAR ELEMENTO POR ID
+PUT {{api}}/9
+Content-Type: application/json
+
+{
+    "name": "SEBASTIAN",
+    "description": "GUERRERO",
+    "quantity": "6777"
+}
